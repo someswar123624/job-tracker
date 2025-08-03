@@ -21,7 +21,7 @@ const Home = () => {
     setJobs(prev => prev.filter(job => job.id !== id));
   };
 
-  // On update, refresh the jobs list
+
   const handleUpdate = () => {
     fetchJobs();
   };

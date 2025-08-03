@@ -30,7 +30,7 @@ const JobCard = ({ job, onDelete, onUpdate }) => {
       const jobRef = doc(db, 'jobs', job.id);
       await updateDoc(jobRef, { role, company, status, date });
       setIsEditing(false);
-      onUpdate(); // refresh list in parent
+      onUpdate(); 
     } catch (err) {
       alert("Failed to update job");
       console.error(err);
@@ -39,7 +39,6 @@ const JobCard = ({ job, onDelete, onUpdate }) => {
 
   const handleCancel = () => {
     setIsEditing(false);
-    // reset edits to original values
     setRole(job.role);
     setCompany(job.company);
     setStatus(job.status);
