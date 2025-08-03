@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.input {
+  width: 100%;
+  padding: 0.5rem ;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.5rem; 
+  outline: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2px #6366F1;
+}
